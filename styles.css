@@ -1,0 +1,81 @@
+#apple {
+    width: 200px;
+    animation: rotateApple 1s infinite linear;
+}
+
+@keyframes rotateApple {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#tennis {
+    width: 600px;
+    animation: fadeTennis 4s infinite ease-in-out;
+}
+
+@keyframes fadeTennis {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#logo {
+    width: 250px;
+    animation: morphLogo 5s infinite ease-in-out alternate;
+}
+
+@keyframes morphLogo {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.2) rotate(15deg);
+    }
+
+    50% {
+        transform: scale(1.5) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.2) rotate(-15deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+#playstation {
+    width: 250px;
+    animation: slidePlaystation 3s infinite linear;
+    position: relative;
+}
+
+@keyframes slidePlaystation {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
